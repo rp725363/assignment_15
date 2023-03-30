@@ -1,0 +1,67 @@
+1.How many seconds are in an hour? Use the interactive interpreter as a calculator and multiply the
+number of seconds in a minute (60) by the number of minutes in an hour (also 60).
+Ans:-
+To calculate the number of seconds in an hour, we can multiply the number of seconds in a minute (60) by the number of minutes in an hour (60).
+here below is example of multiplication:-
+60 * 60
+Output = 3600
+
+
+2. Assign the result from the previous task (seconds in an hour) to a variable called
+seconds_per_hour.
+Ans:-
+Here's how you can assign the result from the previous task (3600 seconds in an hour) to a variable called seconds_per_hour using Python:
+seconds_per_hour=3600
+
+3. How many seconds do you think there are in a day? Make use of the variables seconds per hour
+and minutes per hour.
+Ans:-
+There are 24 hours in a day, so we can multiply the number of seconds per hour (3600) by 24 to get the number of seconds in a day.
+Here how can we write code to calculate seconds in day:-
+
+minutes_per_hour = 60
+seconds_per_hour = 60 * minutes_per_hour
+seconds_per_day = 24 * seconds_per_hour
+
+output will be seconds in a day
+
+4. Calculate seconds per day again, but this time save the result in a variable called seconds_per_day
+Ans:-
+here's how you can calculate the number of seconds in a day and save it in a variable called seconds_per_day using Python:
+here are an example below to calculate seconds in a day:-
+minutes_per_hour = 60
+seconds_per_hour = 60 * minutes_per_hour
+hours_per_day = 24
+seconds_per_day = hours_per_day * seconds_per_hour
+print(seconds_per_day)
+
+5. Divide seconds_per_day by seconds_per_hour. Use floating-point (/) division.
+Ans:-
+Here's how you can divide seconds_per_day by seconds_per_hour using floating-point division in Python:
+here is an example how to devide seconds_per_day by seconds_per_hour:-
+seconds_per_day = 86400
+seconds_per_hour = 3600
+result=seconds_per_day / seconds_per_hour
+print(result)
+
+6. Divide seconds_per_day by seconds_per_hour, using integer (//) division. Did this number agree with the floating-point value from the previous question, 
+aside from the final .0?
+Ans:-
+here is how you can divide seconds_per_day by seconds_per_hour using integer division in Python:
+
+seconds_per_day = 86400
+seconds_per_hour = 3600
+result=seconds_per_day // seconds_per_hour
+print(result)
+
+7. Write a generator, genPrimes, that returns the sequence of prime numbers on successive calls to its next() method: 2, 3, 5, 7, 11, ...
+Ans:-
+Here's one way to implement the genPrimes generator function in Python:
+# Create a generator object
+prime_gen = genPrimes()
+
+# Print out the first 10 prime numbers
+for i in range(10):
+    print(next(prime_gen))
+
+
